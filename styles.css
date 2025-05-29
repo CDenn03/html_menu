@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #414f25;
+  --secondary-color: #DDA853;
+  --accent-color: #decdc3;
+  --background-color: #F5ECD5;
+  --text-color: #626F47;
+  --heading-color: #626F47;
+  --link-color: #DDA853;
+  --heading-color-secondary: #DDA853;
+}
+/* Body styling */
+body {
+  background-color: var(--background-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: var(--text-color); 
+}
+/* Headings */
+h1 {
+  text-align: center;
+  color: var(--heading-color); 
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: var(--heading-color);
+  font-size: 1.8em;
+  margin-top: 15px;
+  border-bottom: 2px solid var(--heading-color); 
+  padding-bottom: 5px;
+}
+/* lists */
+ul {
+  list-style: none; 
+  padding: 0;
+}
+
+li {
+  margin: 15px 0; 
+}
+/* Dishes name */
+strong {
+  font-size: 1.2em;
+  color: var(--heading-color);
+}
+
+p {
+  margin: 15px 0 0 10px; 
+  color: var(--text-color); 
+  font-size: 1em;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  position: relative; 
+  font-size: 1em;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--secondary-color);
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%; 
+}
